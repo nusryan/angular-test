@@ -1,0 +1,8 @@
+<div class="content" role="main">
+  <input type="text" required="required" [(ngModel)]="textValue" (change)="onChangeValue($event)"/>
+
+  <div class="mt-5">
+    <small class="mb-3">The color will be changed if the text includes NUS</small>
+    <p [ngClass]="isNUS ? 'special' : ''">{{ textValue }}</p>
+  </div>
+</div>
